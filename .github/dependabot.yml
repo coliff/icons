@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - Johann-S
+  - XhmikosR
+  labels:
+  - dependencies
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: hugo-bin
+    versions:
+    - 0.68.0
+    - 0.69.0
+    - 0.70.0
+  - dependency-name: linkinator
+    versions:
+    - 2.13.1
+    - 2.13.3
+    - 2.13.4
+  - dependency-name: vnu-jar
+    versions:
+    - 20.6.30
+    - 21.2.5
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: chalk
+    versions:
+    - 4.1.0
